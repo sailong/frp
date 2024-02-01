@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  frpc:
+    container_name: frpc
+    image: simonchang/alpine3-frpc
+    volumes:
+      - './frpc.toml:/etc/frp/frpc.toml'
+    # command: -c /etc/frp/frpc.toml
+    network_mode: host
+    restart: unless-stopped
