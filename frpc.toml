@@ -1,0 +1,11 @@
+serverAddr = "xxx.xxx.xxx.xxx"
+serverPort = 7000
+auth.method = "token"
+auth.token = "xxxxxxx"
+
+[[proxies]]
+name = "ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 9922
